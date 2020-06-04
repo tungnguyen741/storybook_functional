@@ -11,7 +11,8 @@ export default class Books extends Component{
         return(
             <div className="Books">
                 <div className="container layout">
-                {this.props.data.map((product, index)=>
+                {
+                  this.props.data.map((product, index)=>
                   <div className="col-3-m">
                     <div key={index} className="product"> 
                         <img src={product.image} alt=""/> 

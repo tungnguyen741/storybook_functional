@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "storybook-cfd61",
+    "teststory": "demo1-bbe37",
+    "storybook": "storybook-cfd61"
+  }
+}

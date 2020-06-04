@@ -1,10 +1,12 @@
-.col-3-m{
-    width: 22%;
+.product, .col-3-m{
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 50px;
     height: 710px;
     overflow: hidden;
+}
+.col-3-m{
+    width: 23%
 }
 .layout {
     display: flex;

@@ -56,19 +56,21 @@ export default class BookList extends Component {
                     </div>
                 }
                 <div className="container layout">
-                {this.state.dataFromApi.map((product, index)=>
-                  <div key={index} className="col-3-m">
-                    <div key={index} className="product"> 
-                        <img src={product.image} alt=""/> 
-                        <div className="title">
-                            {product.title}
-                        </div>
-                        <div className="description">
-                            {product.description}
-                        </div>
+                    <div className="row">
+                    {this.state.dataFromApi.map((product, index)=>
+                        <div key={index} className="col-md-3 col-6">
+                            <div key={index} className="product"> 
+                                <img src={product.image} alt=""/> 
+                                <div className="title">
+                                    {product.title}
+                                </div>
+                                <div className="description">
+                                    {product.description}
+                                </div>
+                            </div>
+                        </div>  
+                        )}
                     </div>
-                  </div>  
-                )}
                 </div>
             </div>
         )
