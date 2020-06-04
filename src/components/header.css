@@ -1,0 +1,33 @@
+.Header {
+    height: 90px;
+    background: #f8f9fa!important;
+}
+.header_left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header_left a img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 3px solid #eee;
+}
+.header_left img{
+    width: 75px;
+    height: 75px;
+}
+.left_first {
+    display: flex;
+    align-items: center;
+}
+.cart {
+    margin-left: 55px;
+}
+.header_right {
+    flex-grow: 2;
+    text-align: end;
+}
+.header_right button {
+    margin-left: 8px !important;
+}
