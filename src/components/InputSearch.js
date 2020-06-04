@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types';
 export default class InputSearch extends Component{
     constructor(props){
         super(props);
@@ -40,3 +41,16 @@ export default class InputSearch extends Component{
         );
     }
 }
+
+InputSearch.defaultProps = {
+    dataDefault: [],
+    dataFromApi: []
+  };
+  
+  InputSearch.propTypes = {
+    isShow: PropTypes.bool.isRequired,
+    renderFilter: PropTypes.func,
+    dataDefault: PropTypes.array.isRequired,
+    dataFromApi: PropTypes.array.isRequired
+  };
+  
