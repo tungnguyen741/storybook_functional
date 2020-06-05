@@ -1,12 +1,8 @@
-import React, {Component} from 'react'
+import React from 'react'
 import './header.css'
 import logoCart from '../img/supermarket.svg'
 import { Button } from 'reactstrap';
-export default class Header extends Component{
-    constructor(props){
-        super(props);
-    }
-    render(){
+ function Header(){
         return(
             <div className="Header">
                 <div className="header_left container">
@@ -27,5 +23,6 @@ export default class Header extends Component{
                 </div>
             </div>
         );
-    }
 }
+
+export default Header
